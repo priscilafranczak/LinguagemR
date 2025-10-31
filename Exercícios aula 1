@@ -1,0 +1,98 @@
+#quest 1: Encontrar o tipo de dado em cada questão digitando os códigos abaixo no script do R, utilizando o código mode(.......). Exiba os comandos utilizados até chegar ao resultado.
+#a)
+x<-"valor"
+mode(x)
+
+#b)
+y<-"string"
+mode(y)
+
+#c)
+z<-2<4
+mode(z)
+
+#d)
+k<-sin
+mode(k)
+
+#quest 2: Digite as expressões numéricas no script do R e encontre os resultados.
+
+#a)
+4+9
+
+#b)
+4-5
+
+#c)
+4*5
+
+#d)
+4/5
+
+#e)
+4^2
+
+#f)
+4^5
+
+#g)radianos
+sin(45)
+
+#h)
+(25-12)^2
+
+#i)
+((4+5)*7)-((36/18)^3)
+
+#j)
+0/0
+
+#k)
+Inf/0
+
+#quest 3: Faça os arredondamentos requeridos usando das funções ceiling (x) e floor (x) e transcreva a sequência os comandos utilizados até chegar ao resultado.
+
+#a)
+ceiling(2.547)
+
+#b
+floor(2.547)
+
+#quest 4: Arredonde os valores de acordo com o número pré-estabelecido de casas decimais. Consulte a função para esta atividade e transcreva 
+#a sequência dos comandos utilizados até chegar ao resultado.
+
+#a)
+round(2.4785269, 3)
+
+#b)
+round(84.5468,2)
+
+#c)
+round(5.8467,1)
+
+#quest 5: Arredonde os valores de acordo com o número pré-estabelecido de algarismos significativos. Consulte a função para esta atividade 
+#e transcreva a sequência dos comandos que aparecem no console, que foram utilizados até chegar ao resultado.
+#a)
+signif(2.4785269, 3)
+
+#b)
+signif(84.5468,2)
+
+#c)
+signif(5.8467,1)
+
+#quest 6: Atribua o valor de 25 para a variável x e o valor 17 para a variável y. Em seguida dê o comando para remover a variável x.
+#Transcreva os comandos que aparecem no console abaixo desta questão.
+x<-25
+y<-17
+rm(x)
+x
+
+#quest 7: Em um grupo de 4 amigos, fez-se o levantamento das idades de cada um. O primeiro tem 47 anos, o segundo tem 18 anos, o 
+#terceiro não quis responder e o quarto tem 30 anos. Atribua esses valores para uma variável chamada idades e calcule a média de idades 
+#usando o comando mean( ), lembrando que existe alguém que não respondeu a pesquisa. Em seguida arredonde o valor da média para 1 casa decimal.
+#Transcreva a sequência dos comandos utilizados no console para esta questão.
+amigos<-c(47,18,NA,30)
+amigos
+mean(amigos, na.rm = TRUE)
+round(mean(amigos, na.rm = TRUE),1)
