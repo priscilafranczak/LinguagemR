@@ -1,0 +1,129 @@
+#quest 1: Usando o conceito e códigos de sequência numérica de valores, crie as sequências abaixo no RStudio:
+a)	sequência de números de 1 a 5.
+b)	sequência de números de 5 a 1.
+c)	sequência de números de 1 a 20, com incremento de 5.
+d)	sequência de números de 20 a 1, com incremento de 5.
+e)	sequência de números de 20 a 1, com incremento de -5.
+
+#a)
+seq(1,5,1)
+
+#b)
+seq(5,1,-1)
+
+#c)
+seq(1,20,5)
+
+#d
+seq(20,1,5)
+
+#e
+seq(20,1,-5)
+
+#quest 2: Usando o conceito e código de repetições, crie as repetições abaixo no RStudio:
+
+a)	repetição do número 6 por 8 vezes.
+b)	repetição do vetor (2,3) por 5 vezes.
+c)	repetição do vetor (2,3,5) por 5 vezes.
+d)	concatene a repetição do número 2 por 4 vezes e do número 3 por 5 vezes.
+e)	concatene a repetição do número 1 por 5 vezes, do número 2 por 3 vezes e do número 3 por 5 vezes.
+
+#a)
+rep(6,8)
+
+#b)
+rep(c(2,3),5)
+
+#c)
+rep(c(2,3,5),5)
+
+#d
+c(rep(2,4), rep(3,5))
+
+#e
+c(rep(1,5), rep(2,3), rep(3,5))
+
+#quest 3: Crie os vetores abaixo e localize os índices indicados em cada letra:
+
+a)	crie o vetor “a” com a sequência de números de 5 a 10 e localize o terceiro elemento.
+b)	no vetor “a”, localize do primeiro ao quarto elementos.
+c)	no vetor “a”, localize o primeiro e quarto elementos.
+d)	no vetor “a”, localize os elementos maiores que 7.
+e)	no vetor “a”, localize os elementos menores que 7.
+f)	no vetor “a”, localize todos os elementos, exceto os números 6 e 7.
+
+#a)
+a<-5:10
+a
+a[3]
+
+#b
+a[1:4]
+
+#c
+a[c(1,4)]
+
+#d
+a[a>7]
+
+#e
+a[a<7]
+
+#f
+a[c(-2,-3)]
+
+#quest 4: Siga a sequência abaixo:
+
+a)	Crie o vetor “b” com a sequência de números de 1 a 11 com incremento 2.
+b)	Utilize os dados do vetor “b” para criar uma matriz 3x2, disposta através das linhas.
+c)	Localize o primeiro elemento da segunda coluna da matriz.
+d)	Usando o comando summary(B), encontre as medidas descritivas da matriz.
+
+#a)
+b<-seq(1,11,2)
+b
+
+#b
+B<-matrix(b,3,2,1)
+B
+
+#c
+B[1,2]
+
+#d
+summary(B)
+
+#quest 5: Siga a sequência abaixo:
+
+a)	Crie uma matriz “c” com números de 1 a 20, com 4 colunas.
+b)	acrescente uma coluna com os números de 4 a 8, criando assim uma matriz, chamada de “d”.
+c)	Na matriz “d”, acrescente uma nova linha com os valores de 1 a 5.
+d)	Na matriz “d”, localize o terceiro elemento da segunda coluna.
+e)	Na matriz “d”, localize a terceira coluna.
+f)	Na matriz “d”, localize a terceira linha.
+
+#a)
+c<-matrix(1:20,ncol = 4)
+c
+
+#b
+d<-cbind(c,4:8)
+d
+
+#c
+d<-rbind(d,1:5)
+d
+
+#d
+d[3,2]
+
+#e
+d[,3]
+
+#f
+d[3,]
+
+#quest 6: Crie um array com sequência de números de 1 a 16, com 4 linhas, 2 colunas, divididos em 2 matrizes. Após isso, localize o elemento da segunda linha e segunda coluna da matriz 2.
+y<-array(1:16,c(4,2,2))
+y
+y[2,2,2]
